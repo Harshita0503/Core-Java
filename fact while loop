@@ -1,0 +1,23 @@
+import java.util.*;
+class test
+{
+public void fact()
+{
+int a, i, fact=1;
+Scanner sc= new Scanner(System.in);
+System.out.println("Enter the value of a:");
+a=sc.nextInt();
+i=1;
+while(i<=a)
+{
+fact=fact*i;
+System.out.print(fact);
+i++;
+}
+}
+public static void main(String args[])
+{
+test t=new test();
+t.fact();
+}
+}
