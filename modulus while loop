@@ -1,0 +1,23 @@
+class test
+{
+public void show()
+{
+int i;
+i=1;
+while(i<=10)
+{
+if(i%2==0)
+{
+System.out.println(i);
+}
+
+i++;
+}
+}
+
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
