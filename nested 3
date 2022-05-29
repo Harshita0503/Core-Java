@@ -1,0 +1,26 @@
+import java.util.*;
+class test
+{
+public void show()
+{
+int a,i,j,p=1;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter the value of a:");
+a=sc.nextInt();
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=i;j++)
+{
+System.out.print(p);
+p++;
+}
+System.out.println();
+}
+}
+
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
