@@ -1,0 +1,25 @@
+import java.util.*;
+
+class test
+{
+public void show()
+{
+int a,i,j;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the valiue of a: ");
+a=sc.nextInt();
+for(i=a;i>=1;i--)
+{
+for(j=1;j<=i;j++)
+{
+System.out.print("*");
+}
+System.out.println();
+}
+}
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
