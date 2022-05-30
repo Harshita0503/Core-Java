@@ -1,0 +1,37 @@
+import java.util.*;
+class Application1
+{
+public void show()
+{
+Scanner sc=new Scanner(System.in);
+int a,b,c;
+System.out.println("Enter the value of a: ");
+a=sc.nextInt();
+System.out.println("Enter the value of b: ");
+b=sc.nextInt();
+c=a+b;
+System.out.println(c);
+}
+}
+
+class test1 extends Application1
+{
+public void show()
+{
+Scanner sc=new Scanner(System.in);
+int a,b,d;
+System.out.println("Enter the value of a: ");
+a=sc.nextInt();
+System.out.println("Enter the value of b: ");
+b=sc.nextInt();
+d=a-b;
+System.out.println(d);
+}
+
+
+public static void main(String args[])
+{
+Application1 as=new Application1();
+as.show();
+}
+}
