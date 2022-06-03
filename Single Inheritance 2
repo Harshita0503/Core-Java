@@ -1,0 +1,22 @@
+class test
+{
+public void show()
+{
+System.out.println("hello harshita");
+}
+}
+
+class test1 extends test
+{
+public void show()
+{
+super.show();
+System.out.println("hello sir");
+}
+
+public static void main(String args[])
+{
+test1 t=new test1();
+t.show();
+}
+}
