@@ -1,0 +1,34 @@
+interface top
+{
+void show();
+}
+interface top1
+{
+void show1();
+}
+interface top2
+{
+void show2();
+}
+class test implements top,top1,top2
+{
+public void show()
+{
+System.out.println("hello sir");
+}
+public void show1()
+{
+System.out.println("hello harshita");
+}
+public void show2()
+{
+System.out.println("hello ma'am");
+}
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+t.show1();
+t.show2();
+}
+}
