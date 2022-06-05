@@ -1,0 +1,33 @@
+import java.util.*;
+class test
+{
+public void show()
+{
+int n,i,p=1;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the value of n:");
+n=sc.nextInt();
+if(n==1)
+{
+System.out.println("Smallest prime no is 2.");
+}
+for(i=2;i<n;i++)
+{
+if(n%i==0)
+{
+System.out.println("not a prime number.");
+break;
+}
+}
+if(n==i)
+{
+System.out.println("it is a prime number.");
+}
+}
+
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
