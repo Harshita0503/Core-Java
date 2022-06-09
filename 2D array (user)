@@ -1,0 +1,87 @@
+import java.util.*;
+class test
+{
+public void show()
+{
+int t,h,m,n;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the value of m:");
+m=sc.nextInt();
+System.out.println("Enter the value of n:");
+n=sc.nextInt();
+System.out.println("Enter the value of t:");
+t=sc.nextInt();
+System.out.println("Enter the value of h:");
+h=sc.nextInt();
+if(t==m && h==n)
+{
+int a[][] =new int[t][h];
+int b[][] =new int[m][n];
+int c[][] =new int[n][n];
+System.out.println("Enter the elements of first matrix:");
+for(int i=0;i<t;i++)
+{
+for(int j=0;j<h;j++)
+{
+a[i][j]=sc.nextInt();
+}
+}
+System.out.println("Enter the values of first elements:");
+for(int i=0;i<t;i++)
+{
+for(int j=0;j<h;j++)
+{
+System.out.print(a[i][j]+" ");
+}
+System.out.println("");
+}
+System.out.println("Enter the values of second matrix:");
+for(int i=0;i<m;i++)
+{
+for(int j=0;j<n;j++)
+{
+a[i][j]=sc.nextInt();
+}
+}
+System.out.println("Enter the elements of second matrix:");
+for(int i=0;i<m;i++)
+{
+for(int j=0;j<n;j++)
+{
+System.out.print(a[i][j]+" ");
+}
+System.out.println("");
+}
+for(int i=0;i<t;i++)
+{
+for(int j=0;j<h;j++)
+{
+for(int k=0;k<h;k++)
+{
+c[i][j]=a[i][j]+b[i][j];
+}
+}
+}
+System.out.print("matrix after addition:");
+for(int i=0;i<t;i++)
+{
+for(int j=0;j<h;j++)
+{
+System.out.print(c[i][j]+"");
+}
+System.out.println("");
+}
+}
+else
+{
+System.out.println("Adittion would not be possible");
+}
+}
+
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
+
