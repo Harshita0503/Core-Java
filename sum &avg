@@ -1,0 +1,28 @@
+import java.util.*;
+class test
+{
+public void show()
+{
+Scanner sc=new Scanner(System.in);
+int n,a,b,sum=0;
+float average;
+System.out.println("Enter the value of a:");
+a=sc.nextInt();
+System.out.println("Enter the value of b:");
+b=sc.nextInt();
+for(int i=0;i<20;i++)
+{
+sum=a+b;
+}
+System.out.println(sum);
+average=sum/2;
+System.out.println(average);
+}
+
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
+
