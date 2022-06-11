@@ -1,0 +1,23 @@
+class test
+{
+public void show()
+{
+int a=30,b=20,c;
+System.out.println("before swap:");
+System.out.println(a);
+System.out.println(b);
+c=a;
+a=b;
+b=c;
+System.out.println("after swap:");
+System.out.println(a);
+System.out.println(b);
+}
+
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
+
