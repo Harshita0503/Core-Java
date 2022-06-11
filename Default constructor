@@ -1,0 +1,17 @@
+class test
+{
+public test()
+{
+System.out.println("hello harshita");
+}
+public void show()
+{
+System.out.println("hello sir");
+}
+
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
