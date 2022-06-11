@@ -1,0 +1,19 @@
+class test
+{
+int a,b;
+public test(int x,int y)
+{
+a=x;
+b=y;
+}
+public void show()
+{
+c=a+b;
+System.out.println(c);
+}
+public static void main(String args[])
+{
+test t=new test(20,10);
+t.show();
+}
+}
