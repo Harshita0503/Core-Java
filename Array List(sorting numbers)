@@ -1,0 +1,78 @@
+import java.util.*;
+
+
+public class JavaApplication3
+{
+    public void show()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Apple");
+        ss.add("Banana");
+        ss.add("Cherry");
+        ss.add("guava");
+        System.out.println(ss);
+    }
+public void show1()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Apple");
+        ss.add("Banana");
+        ss.add("Cherry");
+        ss.add("guava");
+        for(String fruit:ss)
+            System.out.println(fruit);
+    }
+
+public void show2()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Apple");
+        ss.add("Banana");
+        ss.add("Cherry");
+        ss.add("guava");
+        ss.set(2,"harshita");
+        for(String fruit:ss)
+            System.out.println(fruit);
+    }
+
+public void show3()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Cherry");
+        ss.add("harshita");
+        ss.add("Banana");
+        ss.add("Apple");
+        Collections.sort(ss);
+                
+        for(String fruit:ss)
+            System.out.println(fruit);
+    }
+public void show4()
+    {
+        ArrayList<Integer> ss=new ArrayList<Integer>();
+        ss.add(11);
+        ss.add(23);
+        ss.add(3);
+        ss.add(99);
+        ss.add(45);
+        
+        Collections.sort(ss);
+                
+        for(int number:ss)
+            System.out.println(number);
+    }
+    
+    public static void main(String[] args)
+    {
+        JavaApplication3 js=new JavaApplication3();
+        js.show();
+        js.show1();
+        System.out.println("After add an element:");
+        js.show2();
+        System.out.println("After sorting:");
+        js.show3();
+        System.out.println("After sorting numbers:");
+        js.show4();
+    }
+    
+}
