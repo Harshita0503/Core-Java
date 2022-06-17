@@ -1,0 +1,23 @@
+import java.util.*;
+
+
+public class JavaApplication3
+{
+    public void show()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Apple");
+        ss.add("Banana");
+        ss.add("Cherry");
+        ss.add("guava");
+        System.out.println(ss);
+    }
+
+    
+    public static void main(String[] args)
+    {
+        JavaApplication3 js=new JavaApplication3();
+        js.show();
+    }
+    
+}
