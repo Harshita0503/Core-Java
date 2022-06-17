@@ -1,0 +1,46 @@
+import java.util.*;
+
+
+public class JavaApplication3
+{
+    public void show()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Apple");
+        ss.add("Banana");
+        ss.add("Cherry");
+        ss.add("guava");
+        System.out.println(ss);
+    }
+public void show1()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Apple");
+        ss.add("Banana");
+        ss.add("Cherry");
+        ss.add("guava");
+        for(String fruit:ss)
+            System.out.println(fruit);
+    }
+public void show2()
+    {
+        ArrayList<String> ss=new ArrayList<String>();
+        ss.add("Apple");
+        ss.add("Banana");
+        ss.add("Cherry");
+        ss.add("guava");
+        ss.set(2,"harshita");
+        for(String fruit:ss)
+            System.out.println(fruit);
+    }
+    
+    public static void main(String[] args)
+    {
+        JavaApplication3 js=new JavaApplication3();
+        js.show();
+        js.show1();
+        System.out.println("After add an element:");
+        js.show2();
+    }
+    
+}
