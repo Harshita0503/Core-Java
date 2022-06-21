@@ -1,0 +1,16 @@
+class test
+{
+public void show()
+{
+int a=10;
+Integer i=new Integer(a);
+{
+System.out.println(i);
+}
+}
+public static void main(String args[])
+{
+test t=new test();
+t.show();
+}
+}
